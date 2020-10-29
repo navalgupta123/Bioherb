@@ -1,0 +1,51 @@
+:root {
+    --green-dark: #277e46;
+    --green-light: #4baa4f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: var(--green-dark);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item {
+    background-color: var(--green-light);
+    padding: 10px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.bullet-list {
+    list-style-type: none;
+}
+
+.bullet {
+    position: relative;
+}
+
+.bullet::before {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--green-dark);
+    top: 50%;
+    left: -14px;
+    transform: translate(-50%, -50%);
+}
